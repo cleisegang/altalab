@@ -10,7 +10,14 @@
         <f:facet name="appNav"/>
         <f:facet name="globalLinks"/>
         <f:facet name="footer"/>
-        <f:facet name="center"/>
+        <f:facet name="center">
+          <af:masonryLayout id="ml1">
+            <af:panelGroupLayout id="pgl2" styleClass="AFMasonryTileSize2x1 tileStyle"/>
+            <af:panelGroupLayout id="pgl3" styleClass="AFMasonryTileSize2x1 tileStyle"/>
+            <af:panelGroupLayout id="pgl4" styleClass="AFMasonryTileSize2x2 tileStyle"/>
+            <af:panelGroupLayout id="pgl5" styleClass="AFMasonryTileSize2x2 tileStyle"/>
+          </af:masonryLayout>
+        </f:facet>
         <f:facet name="start">
           <af:listView value="#{bindings.allEmployees.collectionModel}" var="item"
                        emptyText="#{bindings.allEmployees.viewable ? 'No data to display.' : 'Access Denied.'}"
